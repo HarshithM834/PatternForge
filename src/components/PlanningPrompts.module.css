@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.promptItem {
+  background-color: var(--bg-panel);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.question {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: var(--text-off-white);
+  margin-bottom: 12px;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border-subtle);
+  border-radius: 4px;
+  background-color: #F8FAFC;
+  color: #000;
+  font-family: var(--font-main);
+  font-size: 0.95rem;
+  resize: vertical;
+  min-height: 80px;
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--accent-cyan);
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+.expectedAnswer {
+  margin-top: 12px;
+  padding: 12px;
+  background-color: rgba(0, 230, 118, 0.1);
+  border-left: 3px solid var(--success-green);
+  color: #1E293B;
+  font-size: 0.95rem;
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}

@@ -1,0 +1,51 @@
+.container {
+  background-color: #F1F5F9;
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 24px 0;
+}
+
+.codeBlock {
+  padding: 24px;
+  margin: 0;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #000000;
+  font-weight: 500;
+}
+
+.input {
+  background-color: rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  color: #000000;
+  font-weight: 600;
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+  outline: none;
+  text-align: center;
+  transition: all 0.2s ease;
+  margin: 0 4px;
+}
+
+.input:focus {
+  border-color: var(--accent-cyan);
+  background-color: var(--accent-cyan-dim);
+}
+
+.inputError {
+  border-color: var(--error-red);
+  color: var(--error-red);
+}
+
+.actions {
+  background-color: var(--bg-panel);
+  padding: 16px;
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  justify-content: flex-end;
+}

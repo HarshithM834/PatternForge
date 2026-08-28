@@ -1,0 +1,147 @@
+.container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+@media (min-width: 900px) {
+  .container {
+    flex-direction: row;
+  }
+}
+
+.mainPanel {
+  flex: 1;
+  padding: 40px 24px;
+  display: flex;
+  justify-content: center;
+  overflow-y: auto;
+}
+
+.contentWrapper {
+  width: 100%;
+  max-width: 800px;
+}
+
+.stepContent {
+  animation: fadeIn 0.4s ease;
+  min-height: 400px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.stepContent h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+  color: var(--text-off-white);
+}
+
+.stepContent p {
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+  color: var(--text-off-white);
+}
+
+.stepContent pre {
+  background-color: #F1F5F9;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid var(--border-subtle);
+  margin-bottom: 16px;
+  overflow-x: auto;
+}
+
+.stepContent code {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  color: #000000;
+  font-weight: 600;
+}
+
+.stepContent ul {
+  margin-left: 24px;
+  margin-bottom: 16px;
+  color: var(--text-off-white);
+  font-size: 1.1rem;
+}
+
+.stepContent li {
+  margin-bottom: 8px;
+}
+
+.traceTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  font-size: 0.95rem;
+}
+
+.traceTable th, .traceTable td {
+  padding: 12px 16px;
+  border: 1px solid var(--border-subtle);
+  text-align: left;
+}
+
+.traceTable th {
+  background-color: var(--bg-panel);
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.traceTable tr:nth-child(even) {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.navigation {
+  margin-top: 48px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--border-subtle);
+  padding-top: 24px;
+}
+
+.sidePanel {
+  width: 100%;
+  background-color: var(--bg-panel);
+  border-left: 1px solid var(--border-subtle);
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 900px) {
+  .sidePanel {
+    width: 320px;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+  }
+}
+
+.sidePanelContent {
+  padding: 32px 24px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.sidePanelTitle {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-off-white);
+  margin-bottom: 16px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.glossaryList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.hintSection {
+  margin-top: 40px;
+}

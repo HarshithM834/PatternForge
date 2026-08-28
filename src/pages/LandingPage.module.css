@@ -1,0 +1,93 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding: 24px 48px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text-off-white);
+  letter-spacing: 0.5px;
+}
+
+.logoIcon {
+  color: var(--accent-cyan);
+}
+
+.main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 24px;
+}
+
+.hero {
+  text-align: center;
+  max-width: 800px;
+  margin-bottom: 80px;
+}
+
+.headline {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: var(--text-off-white);
+  line-height: 1.1;
+  margin-bottom: 24px;
+  letter-spacing: -1px;
+}
+
+.subheadline {
+  font-size: 1.25rem;
+  color: var(--text-muted);
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.featureCard {
+  background: var(--bg-panel);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 32px 24px;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.featureCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  border-color: rgba(99, 102, 241, 0.2);
+}
+
+.featureIcon {
+  color: var(--accent-cyan);
+  margin-bottom: 16px;
+}
+
+.featureCard h3 {
+  font-size: 1.25rem;
+  color: var(--text-off-white);
+  margin-bottom: 12px;
+}
+
+.featureCard p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}

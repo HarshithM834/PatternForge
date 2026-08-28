@@ -1,0 +1,64 @@
+.container {
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  background-color: #F8FAFC;
+  padding: 16px;
+  margin: 24px 0;
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.codeLine {
+  display: flex;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #000000;
+  font-weight: 500;
+}
+
+.codeLine:hover {
+  background-color: rgba(99, 102, 241, 0.1);
+}
+
+.codeLine.active {
+  background-color: rgba(99, 102, 241, 0.15);
+  border-left: 3px solid var(--accent-cyan);
+}
+
+.lineNumber {
+  width: 32px;
+  color: var(--text-muted);
+  user-select: none;
+}
+
+.codeContent {
+  white-space: pre;
+}
+
+.explanationBox {
+  margin-top: 16px;
+  padding: 16px;
+  background-color: rgba(99, 102, 241, 0.1);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  border-radius: 6px;
+  font-family: var(--font-main);
+  color: var(--text-off-white);
+  animation: fadeIn 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.prompt {
+  margin-top: 16px;
+  font-family: var(--font-main);
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-style: italic;
+  text-align: center;
+}

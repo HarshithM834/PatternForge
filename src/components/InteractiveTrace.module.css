@@ -1,0 +1,118 @@
+.container {
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  background-color: var(--bg-panel);
+  padding: 24px;
+  margin: 24px 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-off-white);
+}
+
+.inputs {
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  color: #000;
+  font-weight: 600;
+}
+
+.stateGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.stateCard {
+  background-color: #F8FAFC;
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  padding: 16px;
+}
+
+.cardLabel {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.cardValue {
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  color: #000;
+  font-weight: 600;
+}
+
+.arrayVisual {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.arrayItem {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F1F5F9;
+  border: 1px solid var(--border-subtle);
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  position: relative;
+}
+
+.arrayItem.active {
+  background-color: rgba(99, 102, 241, 0.15);
+  border-color: var(--accent-cyan);
+  color: var(--accent-cyan);
+  font-weight: 700;
+}
+
+.indexLabel {
+  position: absolute;
+  bottom: -20px;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.decisionBox {
+  background-color: rgba(0, 230, 118, 0.1);
+  border-left: 4px solid var(--success-green);
+  padding: 16px;
+  border-radius: 4px;
+  margin-bottom: 24px;
+  color: #1E293B;
+  font-weight: 500;
+}
+
+.decisionBox.pending {
+  background-color: rgba(0, 0, 0, 0.03);
+  border-color: var(--border-subtle);
+}
+
+.decisionBox.found {
+  background-color: rgba(99, 102, 241, 0.15);
+  border-color: var(--accent-cyan);
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+}

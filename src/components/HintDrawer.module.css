@@ -1,0 +1,77 @@
+.container {
+  background-color: var(--bg-panel);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 24px;
+}
+
+.toggleBtn {
+  width: 100%;
+  background: transparent;
+  color: var(--text-off-white);
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 500;
+}
+
+.toggleBtn:hover {
+  background-color: var(--bg-panel-hover);
+}
+
+.toggleContent {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon {
+  color: #FFC107;
+}
+
+.drawer {
+  padding: 0 16px 16px 16px;
+  border-top: 1px solid var(--border-subtle);
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.hintItem {
+  margin-top: 16px;
+  padding: 12px;
+  background-color: rgba(255, 193, 7, 0.05);
+  border-left: 3px solid #FFC107;
+  border-radius: 0 4px 4px 0;
+}
+
+.hintNumber {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #FFC107;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.hintText {
+  font-size: 0.9rem;
+  color: var(--text-off-white);
+}
+
+.revealBtn {
+  margin-top: 16px;
+  width: 100%;
+  background: transparent;
+  color: var(--accent-cyan);
+  border: 1px dashed var(--accent-cyan-dim);
+  padding: 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.revealBtn:hover {
+  background-color: var(--accent-cyan-dim);
+  border-style: solid;
+}
